@@ -1,0 +1,568 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba0ad0f1e677fe4690b7d4a09df82a8, type: 3}
+  m_Name: enemy example
+  m_EditorClassIdentifier: 
+  firstStateGUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+  edgesData:
+  - outputPortName: Loop
+    outputNodeGUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+    targetPortName: Prev
+    targetNodeGUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+  - outputPortName: Decisions
+    outputNodeGUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+    targetPortName: Input
+    targetNodeGUID: cca922f7-dbb0-412d-bf68-559337945d1b
+  - outputPortName: True
+    outputNodeGUID: cca922f7-dbb0-412d-bf68-559337945d1b
+    targetPortName: Decision
+    targetNodeGUID: 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+  - outputPortName: Next State
+    outputNodeGUID: 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+    targetPortName: Input
+    targetNodeGUID: c4bb1bf3-fcf0-4c46-b59a-11acdbb868da
+  - outputPortName: Loop
+    outputNodeGUID: c4bb1bf3-fcf0-4c46-b59a-11acdbb868da
+    targetPortName: Prev
+    targetNodeGUID: 2611bfae-47b4-4ab6-af53-b5dda95a0f7e
+  - outputPortName: Next
+    outputNodeGUID: 2611bfae-47b4-4ab6-af53-b5dda95a0f7e
+    targetPortName: Prev
+    targetNodeGUID: 9e9cbbc8-ebb6-4136-a3db-c30da149e6c7
+  - outputPortName: Decisions
+    outputNodeGUID: c4bb1bf3-fcf0-4c46-b59a-11acdbb868da
+    targetPortName: Input
+    targetNodeGUID: e66e47df-096a-4ea7-bf83-af84f772fbca
+  - outputPortName: False
+    outputNodeGUID: e66e47df-096a-4ea7-bf83-af84f772fbca
+    targetPortName: Decision
+    targetNodeGUID: 2cbb4f62-b6e9-4cd6-b36d-e96011b8f091
+  - outputPortName: Next State
+    outputNodeGUID: 2cbb4f62-b6e9-4cd6-b36d-e96011b8f091
+    targetPortName: Input
+    targetNodeGUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+  - outputPortName: Next
+    outputNodeGUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+    targetPortName: Input
+    targetNodeGUID: fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+  - outputPortName: False
+    outputNodeGUID: fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+    targetPortName: Prev
+    targetNodeGUID: 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+  - outputPortName: Output
+    outputNodeGUID: 3abf15e9-f254-4fa5-ac33-77a154819545
+    targetPortName: xDirection
+    targetNodeGUID: 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+  - outputPortName: Output
+    outputNodeGUID: d1575b71-24ba-4a75-8b8a-abc81b226d53
+    targetPortName: yDirection
+    targetNodeGUID: 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+  - outputPortName: Value
+    outputNodeGUID: dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    targetPortName: Input
+    targetNodeGUID: 3abf15e9-f254-4fa5-ac33-77a154819545
+  - outputPortName: Value
+    outputNodeGUID: dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    targetPortName: Input
+    targetNodeGUID: d1575b71-24ba-4a75-8b8a-abc81b226d53
+  - outputPortName: True
+    outputNodeGUID: fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+    targetPortName: Input
+    targetNodeGUID: dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+  - outputPortName: Output
+    outputNodeGUID: dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    targetPortName: Prev
+    targetNodeGUID: 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+  - outputPortName: Output
+    outputNodeGUID: 0
+    targetPortName: Input
+    targetNodeGUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+  - outputPortName: Output
+    outputNodeGUID: bd8cf085-6d5d-4484-b237-3a251b63111f
+    targetPortName: min
+    targetNodeGUID: dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+  - outputPortName: Output
+    outputNodeGUID: d8fae799-4cba-4e55-ac02-884882187bbb
+    targetPortName: max
+    targetNodeGUID: dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+  nodesData:
+  - GUID: 0
+    nodeRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 100
+      height: 100
+  - GUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+    nodeRect:
+      serializedVersion: 2
+      x: 200.8
+      y: -82.399994
+      width: 150.40001
+      height: 148.79999
+  - GUID: c4bb1bf3-fcf0-4c46-b59a-11acdbb868da
+    nodeRect:
+      serializedVersion: 2
+      x: 217.6
+      y: 424
+      width: 150.4
+      height: 148.79999
+  - GUID: 2611bfae-47b4-4ab6-af53-b5dda95a0f7e
+    nodeRect:
+      serializedVersion: 2
+      x: 413.6
+      y: 474.40002
+      width: 150.4
+      height: 98.39996
+  - GUID: 9e9cbbc8-ebb6-4136-a3db-c30da149e6c7
+    nodeRect:
+      serializedVersion: 2
+      x: 607.2
+      y: 485.6
+      width: 150.39996
+      height: 98.399994
+  - GUID: 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+    nodeRect:
+      serializedVersion: 2
+      x: 1064
+      y: -32
+      width: 150.40002
+      height: 160
+  - GUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+    nodeRect:
+      serializedVersion: 2
+      x: 389.6
+      y: -32
+      width: 150.4
+      height: 98.399994
+  - GUID: e66e47df-096a-4ea7-bf83-af84f772fbca
+    nodeRect:
+      serializedVersion: 2
+      x: 413.6
+      y: 668.8
+      width: 150.4
+      height: 122.400024
+  - GUID: fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+    nodeRect:
+      serializedVersion: 2
+      x: 551.2
+      y: -32
+      width: 200
+      height: 136.8
+  - GUID: 3abf15e9-f254-4fa5-ac33-77a154819545
+    nodeRect:
+      serializedVersion: 2
+      x: 928.8
+      y: 168
+      width: 135.20001
+      height: 40.800003
+  - GUID: d1575b71-24ba-4a75-8b8a-abc81b226d53
+    nodeRect:
+      serializedVersion: 2
+      x: 928.8
+      y: 217.59999
+      width: 135.20001
+      height: 40.80002
+  - GUID: 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+    nodeRect:
+      serializedVersion: 2
+      x: -36.8
+      y: 292.80002
+      width: 168
+      height: 76.79999
+  - GUID: 2cbb4f62-b6e9-4cd6-b36d-e96011b8f091
+    nodeRect:
+      serializedVersion: 2
+      x: -36.8
+      y: 652.8
+      width: 168
+      height: 76.80005
+  - GUID: cca922f7-dbb0-412d-bf68-559337945d1b
+    nodeRect:
+      serializedVersion: 2
+      x: 368
+      y: 208.8
+      width: 150.40002
+      height: 122.399994
+  - GUID: bd8cf085-6d5d-4484-b237-3a251b63111f
+    nodeRect:
+      serializedVersion: 2
+      x: 594.4
+      y: 217.59999
+      width: 135.19995
+      height: 40.80002
+  - GUID: d8fae799-4cba-4e55-ac02-884882187bbb
+    nodeRect:
+      serializedVersion: 2
+      x: 594.4
+      y: 290.40002
+      width: 135.19995
+      height: 40.799988
+  - GUID: dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    nodeRect:
+      serializedVersion: 2
+      x: 751.2
+      y: 147.2
+      width: 150.39996
+      height: 184
+  statesData:
+  - GUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+    stateName: IDLE
+    nextActionGUID: 
+    firstLoopActionGUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+    firstOnEnterActionGUID: 
+    firstOnExitActionGUID: 
+    firstTransitionCheckGUID: cca922f7-dbb0-412d-bf68-559337945d1b
+    childNodesGUID:
+    - 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+    - 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+    - fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+    - 3abf15e9-f254-4fa5-ac33-77a154819545
+    - d1575b71-24ba-4a75-8b8a-abc81b226d53
+    - 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+    - cca922f7-dbb0-412d-bf68-559337945d1b
+    - bd8cf085-6d5d-4484-b237-3a251b63111f
+    - d8fae799-4cba-4e55-ac02-884882187bbb
+    - dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+  - GUID: c4bb1bf3-fcf0-4c46-b59a-11acdbb868da
+    stateName: CHASE
+    nextActionGUID: 
+    firstLoopActionGUID: 2611bfae-47b4-4ab6-af53-b5dda95a0f7e
+    firstOnEnterActionGUID: 
+    firstOnExitActionGUID: 
+    firstTransitionCheckGUID: e66e47df-096a-4ea7-bf83-af84f772fbca
+    childNodesGUID:
+    - 2611bfae-47b4-4ab6-af53-b5dda95a0f7e
+    - 9e9cbbc8-ebb6-4136-a3db-c30da149e6c7
+    - e66e47df-096a-4ea7-bf83-af84f772fbca
+    - 2cbb4f62-b6e9-4cd6-b36d-e96011b8f091
+  actionsData:
+  - GUID: 2611bfae-47b4-4ab6-af53-b5dda95a0f7e
+    stateData:
+      GUID: c4bb1bf3-fcf0-4c46-b59a-11acdbb868da
+      stateName: CHASE
+      nextActionGUID: 
+      firstLoopActionGUID: 2611bfae-47b4-4ab6-af53-b5dda95a0f7e
+      firstOnEnterActionGUID: 
+      firstOnExitActionGUID: 
+      firstTransitionCheckGUID: e66e47df-096a-4ea7-bf83-af84f772fbca
+      childNodesGUID:
+      - 2611bfae-47b4-4ab6-af53-b5dda95a0f7e
+      - 9e9cbbc8-ebb6-4136-a3db-c30da149e6c7
+      - e66e47df-096a-4ea7-bf83-af84f772fbca
+      - 2cbb4f62-b6e9-4cd6-b36d-e96011b8f091
+    action: {fileID: 11400000, guid: 822f94c0271946841b531db3783e5f40, type: 2}
+    nextActionGUID: 9e9cbbc8-ebb6-4136-a3db-c30da149e6c7
+  - GUID: 9e9cbbc8-ebb6-4136-a3db-c30da149e6c7
+    stateData:
+      GUID: c4bb1bf3-fcf0-4c46-b59a-11acdbb868da
+      stateName: CHASE
+      nextActionGUID: 
+      firstLoopActionGUID: 2611bfae-47b4-4ab6-af53-b5dda95a0f7e
+      firstOnEnterActionGUID: 
+      firstOnExitActionGUID: 
+      firstTransitionCheckGUID: e66e47df-096a-4ea7-bf83-af84f772fbca
+      childNodesGUID:
+      - 2611bfae-47b4-4ab6-af53-b5dda95a0f7e
+      - 9e9cbbc8-ebb6-4136-a3db-c30da149e6c7
+      - e66e47df-096a-4ea7-bf83-af84f772fbca
+      - 2cbb4f62-b6e9-4cd6-b36d-e96011b8f091
+    action: {fileID: 11400000, guid: 4ae394cafb0c7e9488bb94b2bc495c89, type: 2}
+    nextActionGUID: 
+  - GUID: 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+    stateData:
+      GUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+      stateName: IDLE
+      nextActionGUID: 
+      firstLoopActionGUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      firstOnEnterActionGUID: 
+      firstOnExitActionGUID: 
+      firstTransitionCheckGUID: cca922f7-dbb0-412d-bf68-559337945d1b
+      childNodesGUID:
+      - 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+      - 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      - fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+      - 3abf15e9-f254-4fa5-ac33-77a154819545
+      - d1575b71-24ba-4a75-8b8a-abc81b226d53
+      - 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+      - cca922f7-dbb0-412d-bf68-559337945d1b
+      - bd8cf085-6d5d-4484-b237-3a251b63111f
+      - d8fae799-4cba-4e55-ac02-884882187bbb
+      - dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    action: {fileID: 11400000, guid: 644bc49eeb9dd134fba4aefdf1c40339, type: 2}
+    nextActionGUID: 
+  - GUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+    stateData:
+      GUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+      stateName: IDLE
+      nextActionGUID: 
+      firstLoopActionGUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      firstOnEnterActionGUID: 
+      firstOnExitActionGUID: 
+      firstTransitionCheckGUID: cca922f7-dbb0-412d-bf68-559337945d1b
+      childNodesGUID:
+      - 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+      - 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      - fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+      - 3abf15e9-f254-4fa5-ac33-77a154819545
+      - d1575b71-24ba-4a75-8b8a-abc81b226d53
+      - 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+      - cca922f7-dbb0-412d-bf68-559337945d1b
+      - bd8cf085-6d5d-4484-b237-3a251b63111f
+      - d8fae799-4cba-4e55-ac02-884882187bbb
+      - dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    action: {fileID: 11400000, guid: 822f94c0271946841b531db3783e5f40, type: 2}
+    nextActionGUID: fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+  decisionsData:
+  - GUID: e66e47df-096a-4ea7-bf83-af84f772fbca
+    stateData:
+      GUID: c4bb1bf3-fcf0-4c46-b59a-11acdbb868da
+      stateName: CHASE
+      nextActionGUID: 
+      firstLoopActionGUID: 2611bfae-47b4-4ab6-af53-b5dda95a0f7e
+      firstOnEnterActionGUID: 
+      firstOnExitActionGUID: 
+      firstTransitionCheckGUID: e66e47df-096a-4ea7-bf83-af84f772fbca
+      childNodesGUID:
+      - 2611bfae-47b4-4ab6-af53-b5dda95a0f7e
+      - 9e9cbbc8-ebb6-4136-a3db-c30da149e6c7
+      - e66e47df-096a-4ea7-bf83-af84f772fbca
+      - 2cbb4f62-b6e9-4cd6-b36d-e96011b8f091
+    decision: {fileID: 11400000, guid: b477f4c54659c9f49879672c3ef20f9c, type: 2}
+    nextActionGUID: 
+    trueGUID: 
+    falseGUID: 2cbb4f62-b6e9-4cd6-b36d-e96011b8f091
+  - GUID: cca922f7-dbb0-412d-bf68-559337945d1b
+    stateData:
+      GUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+      stateName: IDLE
+      nextActionGUID: 
+      firstLoopActionGUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      firstOnEnterActionGUID: 
+      firstOnExitActionGUID: 
+      firstTransitionCheckGUID: cca922f7-dbb0-412d-bf68-559337945d1b
+      childNodesGUID:
+      - 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+      - 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      - fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+      - 3abf15e9-f254-4fa5-ac33-77a154819545
+      - d1575b71-24ba-4a75-8b8a-abc81b226d53
+      - 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+      - cca922f7-dbb0-412d-bf68-559337945d1b
+      - bd8cf085-6d5d-4484-b237-3a251b63111f
+      - d8fae799-4cba-4e55-ac02-884882187bbb
+      - dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    decision: {fileID: 11400000, guid: b477f4c54659c9f49879672c3ef20f9c, type: 2}
+    nextActionGUID: 
+    trueGUID: 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+    falseGUID: 
+  timersData:
+  - GUID: fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+    stateData:
+      GUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+      stateName: IDLE
+      nextActionGUID: 
+      firstLoopActionGUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      firstOnEnterActionGUID: 
+      firstOnExitActionGUID: 
+      firstTransitionCheckGUID: cca922f7-dbb0-412d-bf68-559337945d1b
+      childNodesGUID:
+      - 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+      - 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      - fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+      - 3abf15e9-f254-4fa5-ac33-77a154819545
+      - d1575b71-24ba-4a75-8b8a-abc81b226d53
+      - 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+      - cca922f7-dbb0-412d-bf68-559337945d1b
+      - bd8cf085-6d5d-4484-b237-3a251b63111f
+      - d8fae799-4cba-4e55-ac02-884882187bbb
+      - dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    timeInterval: 1
+    intervalRandomOffset: 0.5
+    currentRandomOffset: 0
+    currentTime: 0
+    trueGUID: dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    falseGUID: 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+    nextGUID: 
+  valuesData:
+  - GUID: 3abf15e9-f254-4fa5-ac33-77a154819545
+    stateData:
+      GUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+      stateName: IDLE
+      nextActionGUID: 
+      firstLoopActionGUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      firstOnEnterActionGUID: 
+      firstOnExitActionGUID: 
+      firstTransitionCheckGUID: cca922f7-dbb0-412d-bf68-559337945d1b
+      childNodesGUID:
+      - 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+      - 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      - fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+      - 3abf15e9-f254-4fa5-ac33-77a154819545
+      - d1575b71-24ba-4a75-8b8a-abc81b226d53
+      - 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+      - cca922f7-dbb0-412d-bf68-559337945d1b
+      - bd8cf085-6d5d-4484-b237-3a251b63111f
+      - d8fae799-4cba-4e55-ac02-884882187bbb
+      - dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    valueName: xDirection
+    targetGUID: 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+    valueType: System.Single
+    intValue: 0
+    floatValue: 0
+    boolValue: 0
+    stringValue: 
+  - GUID: d1575b71-24ba-4a75-8b8a-abc81b226d53
+    stateData:
+      GUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+      stateName: IDLE
+      nextActionGUID: 
+      firstLoopActionGUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      firstOnEnterActionGUID: 
+      firstOnExitActionGUID: 
+      firstTransitionCheckGUID: cca922f7-dbb0-412d-bf68-559337945d1b
+      childNodesGUID:
+      - 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+      - 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      - fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+      - 3abf15e9-f254-4fa5-ac33-77a154819545
+      - d1575b71-24ba-4a75-8b8a-abc81b226d53
+      - 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+      - cca922f7-dbb0-412d-bf68-559337945d1b
+      - bd8cf085-6d5d-4484-b237-3a251b63111f
+      - d8fae799-4cba-4e55-ac02-884882187bbb
+      - dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    valueName: yDirection
+    targetGUID: 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+    valueType: System.Single
+    intValue: 0
+    floatValue: 0
+    boolValue: 0
+    stringValue: 
+  - GUID: bd8cf085-6d5d-4484-b237-3a251b63111f
+    stateData:
+      GUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+      stateName: IDLE
+      nextActionGUID: 
+      firstLoopActionGUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      firstOnEnterActionGUID: 
+      firstOnExitActionGUID: 
+      firstTransitionCheckGUID: cca922f7-dbb0-412d-bf68-559337945d1b
+      childNodesGUID:
+      - 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+      - 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      - fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+      - 3abf15e9-f254-4fa5-ac33-77a154819545
+      - d1575b71-24ba-4a75-8b8a-abc81b226d53
+      - 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+      - cca922f7-dbb0-412d-bf68-559337945d1b
+      - bd8cf085-6d5d-4484-b237-3a251b63111f
+      - d8fae799-4cba-4e55-ac02-884882187bbb
+      - dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    valueName: min
+    targetGUID: dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    valueType: System.Single
+    intValue: 0
+    floatValue: -1
+    boolValue: 0
+    stringValue: 
+  - GUID: d8fae799-4cba-4e55-ac02-884882187bbb
+    stateData:
+      GUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+      stateName: IDLE
+      nextActionGUID: 
+      firstLoopActionGUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      firstOnEnterActionGUID: 
+      firstOnExitActionGUID: 
+      firstTransitionCheckGUID: cca922f7-dbb0-412d-bf68-559337945d1b
+      childNodesGUID:
+      - 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+      - 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      - fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+      - 3abf15e9-f254-4fa5-ac33-77a154819545
+      - d1575b71-24ba-4a75-8b8a-abc81b226d53
+      - 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+      - cca922f7-dbb0-412d-bf68-559337945d1b
+      - bd8cf085-6d5d-4484-b237-3a251b63111f
+      - d8fae799-4cba-4e55-ac02-884882187bbb
+      - dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    valueName: max
+    targetGUID: dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    valueType: System.Single
+    intValue: 0
+    floatValue: 1
+    boolValue: 0
+    stringValue: 
+  valueChangersData:
+  - GUID: dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    stateData:
+      GUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+      stateName: IDLE
+      nextActionGUID: 
+      firstLoopActionGUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      firstOnEnterActionGUID: 
+      firstOnExitActionGUID: 
+      firstTransitionCheckGUID: cca922f7-dbb0-412d-bf68-559337945d1b
+      childNodesGUID:
+      - 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+      - 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      - fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+      - 3abf15e9-f254-4fa5-ac33-77a154819545
+      - d1575b71-24ba-4a75-8b8a-abc81b226d53
+      - 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+      - cca922f7-dbb0-412d-bf68-559337945d1b
+      - bd8cf085-6d5d-4484-b237-3a251b63111f
+      - d8fae799-4cba-4e55-ac02-884882187bbb
+      - dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    nextActionGUID: 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+    valueType: System.Single
+    valueChanger: {fileID: 11400000, guid: d65bca5b328992944a0eb7b570023445, type: 2}
+    valuesGUIDs:
+    - 3abf15e9-f254-4fa5-ac33-77a154819545
+    - d1575b71-24ba-4a75-8b8a-abc81b226d53
+  transitionsData:
+  - GUID: 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+    stateData:
+      GUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b
+      stateName: IDLE
+      nextActionGUID: 
+      firstLoopActionGUID: 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      firstOnEnterActionGUID: 
+      firstOnExitActionGUID: 
+      firstTransitionCheckGUID: cca922f7-dbb0-412d-bf68-559337945d1b
+      childNodesGUID:
+      - 3a79dfdc-cefd-45a8-9cc2-8567d255cb88
+      - 3b53ad15-cfc2-4cd3-bd33-af5e908267e5
+      - fa6b8e81-bdc7-4d17-83f6-6eee9e1fdc15
+      - 3abf15e9-f254-4fa5-ac33-77a154819545
+      - d1575b71-24ba-4a75-8b8a-abc81b226d53
+      - 34fd909c-1a1a-4aa7-9f43-89964d1b5614
+      - cca922f7-dbb0-412d-bf68-559337945d1b
+      - bd8cf085-6d5d-4484-b237-3a251b63111f
+      - d8fae799-4cba-4e55-ac02-884882187bbb
+      - dd80e0f8-4bcf-452a-b6bb-563b4ff5cb0f
+    nextStateGUID: c4bb1bf3-fcf0-4c46-b59a-11acdbb868da
+  - GUID: 2cbb4f62-b6e9-4cd6-b36d-e96011b8f091
+    stateData:
+      GUID: c4bb1bf3-fcf0-4c46-b59a-11acdbb868da
+      stateName: CHASE
+      nextActionGUID: 
+      firstLoopActionGUID: 2611bfae-47b4-4ab6-af53-b5dda95a0f7e
+      firstOnEnterActionGUID: 
+      firstOnExitActionGUID: 
+      firstTransitionCheckGUID: e66e47df-096a-4ea7-bf83-af84f772fbca
+      childNodesGUID:
+      - 2611bfae-47b4-4ab6-af53-b5dda95a0f7e
+      - 9e9cbbc8-ebb6-4136-a3db-c30da149e6c7
+      - e66e47df-096a-4ea7-bf83-af84f772fbca
+      - 2cbb4f62-b6e9-4cd6-b36d-e96011b8f091
+    nextStateGUID: 40f4fa1d-f433-45a4-99aa-c7e1c1c3d83b

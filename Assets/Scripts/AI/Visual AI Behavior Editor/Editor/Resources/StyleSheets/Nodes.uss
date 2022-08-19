@@ -1,0 +1,171 @@
+EntryNode #title
+{ 	
+	background-color: rgb(200, 200, 200);
+}
+EntryNode #title-label
+{ 	
+	color: rgb(0, 0, 0);
+}
+EntryNode 
+{ 	
+	width: 100px;
+	height: 100px;
+}
+
+
+TransitionNode #title	
+{ 	
+	background-color: rgb(200, 200, 200);
+}
+TransitionNode #title-label	
+{ 	
+	color: rgb(0, 0, 0);
+}
+
+
+
+StateNode #title
+{  
+	background-color: rgb(180, 50, 50);
+}
+StateNode #title-label
+{  
+	color: rgb(0, 0, 0);
+}
+StateNode
+{  
+	width: 150px;
+}
+.stateNodeNameField
+{
+	width: 75px;
+	height: 30px;
+	border-color: rgb(180, 180, 0);
+	margin-bottom: 30px;
+	-unity-text-align: upper-right;
+	-unity-font-style: bold;
+}
+
+
+
+.newActionButt
+{
+	background-color: rgb(200, 150, 25);
+	color: rgb(0, 0, 0);
+}
+.newDecisionButt
+{
+	background-color: rgb(100, 30, 150);
+}
+.newTimerButt
+{
+	background-color: rgb(50, 200, 200);
+	color: rgb(0, 0, 0);
+}
+.newValueButt
+{
+
+}
+.newValueChangerButt
+{
+	background-color: rgb(50, 80, 50);
+	color: rgb(200, 200, 200);
+}
+.newStateTransitionButt
+{
+	background-color: rgb(200, 200, 200);
+	color: rgb(0, 0, 0);
+}
+
+
+ActionNode #title
+{
+	background-color: rgb(200, 150, 25);
+}
+ActionNode #title-label
+{
+	color: rgb(0, 0, 0);
+}
+ActionNode
+{
+	max-width: 150px;
+}
+
+
+.actionField 
+{
+	
+}
+
+
+DecisionNode #title
+{
+	background-color: rgb(100, 30, 150);
+}
+DecisionNode 
+{
+	max-width: 150px;
+}
+
+
+
+ValueNode  #inputContainer
+{
+	max-width: 50px;
+}
+
+ValueNode 
+{
+	max-width: 1000px;
+}
+
+.valueNodeField 
+{
+	min-width: 20px;
+	max-width: 150px;
+}
+.valueNodeTitle
+{
+	visibility: hidden;
+	max-height: 0px;
+}
+
+
+
+ValueChangerNode #title
+{
+	background-color: rgb(50, 80, 50);
+}
+ValueChangerNode #title-label
+{
+	color: rgb(200, 200, 200);
+}
+ValueChangerNode 
+{
+	max-width: 150px;
+}
+
+
+TimerNode #title 
+{
+	background-color: rgb(50, 200, 200);
+}
+TimerNode #title-label
+{
+	color: rgb(0, 0, 0);
+}
+TimerNode  
+{
+	width: 200px;	
+}
+.timerField
+{
+	margin-left: 5px;
+
+	min-width: 90px;
+	max-width: 90px;
+}
+.timerFieldLabel
+{
+	margin-left: 5px;
+}

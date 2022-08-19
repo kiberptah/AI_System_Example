@@ -1,0 +1,80 @@
+GridBackground
+{
+	--grid-background-color: rgb(20, 20, 20);
+
+	--line-color: rgba(256, 256, 256, 0.00);
+	--thick-line-color: rgba(0, 0, 0, 0.5);
+	--spacing: 10;
+}
+
+
+.behaviorNameLabel
+{
+	align-self: center;
+	margin-left: 10px;
+}
+.behaviorNameField
+{
+	min-width: 200px;
+	max-width: 1000px;
+	margin-right: 10px;
+}
+Toolbar
+{ 
+		
+
+}
+.toolbarBox
+{
+	flex-direction: row;
+	margin-left:auto;
+}
+
+
+.port-label
+{
+	visibility: visible;
+
+	min-width: 1px;
+	max-width: 50px;
+
+	
+}
+
+.port-labelHidden
+{
+	visibility: hidden;
+	width: 0px;
+}
+
+.port-container
+{
+	align-self: flex-start;
+	
+}
+
+
+
+.horizontal-arrangement
+{
+	flex-direction: row;
+
+}
+
+
+.contentContainer
+{
+	background-color: rgb(35, 35, 35);	
+}
+
+
+.horizontalContent
+{
+	flex-direction: row;
+}
+
+.centeredContent
+{
+	flex-direction: column;
+	align-content: center;
+}
